@@ -64,7 +64,7 @@
       "Feedback": "Cliente satisfecho; pide búsqueda rápida, recordatorios (HU-005), motivo consulta.",
       "Tareas Pendientes": "<ul><li>T01: Refinar HU-005 (Dra. Olave/Eduardo, 22/05/2025)</li><li>T02: Mejorar búsqueda (Leandro, 22/05/2025)</li><li>T03: Analizar motivo consulta (Eduardo, 22/05/2025)</li><li>T04: Actualizar backlog (Marcelo, 22/05/2025)</li></ul>"
     },
-    "attendees": ["Dr. Lautaro Colella", "Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+    "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
   },
   {
     "id": "s1_retrospective",
@@ -76,7 +76,9 @@
     "objective": "Revisar Sprint 1, planificar mejoras.",
     "summary": "Keep: comunicación y colaboración. Stop: retrasos. Start: automatización y canales consulta.",
     "details": {
-      "Temas y Acuerdos": "<ul><li>Keep: Comunicación diaria, colaboración, disponibilidad cliente, DoD claro.</li><li>Stop: Retraso en entorno, documentación dispersa, interrupciones.</li><li>Start: Automatizar entornos, definir canales consulta cliente.</li></ul>",
+      "Keep": "<ul><li>Comunicación diaria, colaboración, disponibilidad cliente, DoD claro.</li></ul>",
+      "Stop": "<ul><li>Retraso en entorno, documentación dispersa, interrupciones.</li></ul>",
+      "Start": "<ul><li>Automatizar entornos, definir canales consulta cliente.</li></ul>",
       "Tareas Pendientes": "<ul><li>T01: Investigar automatización (Eduardo, 22/05/2025)</li><li>T02: Wiki documentación (Leandro, 22/05/2025)</li><li>T03: Canales consulta (Marcelo, 22/05/2025)</li></ul>"
     },
     "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dra. Pamela Olave"]
@@ -316,4 +318,3 @@
     "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
   }
 ]
-
