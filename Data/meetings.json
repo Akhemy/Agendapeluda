@@ -1,0 +1,319 @@
+[
+  {
+    "id": "s1_planning",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Sprint Planning",
+    "date": "15/05/2025",
+    "time": "09:00 - 13:00",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Definir objetivo del Sprint 1, seleccionar Historias de Usuario (HU), descomponer tareas, crear Sprint Backlog.",
+    "summary": "Objetivo: Implementar gestión básica de turnos y registro de pacientes/propietarios. HUs seleccionadas: HU-001 a HU-004. Tareas detalladas, Sprint Backlog y DoD acordado.",
+    "details": {
+      "Objetivo del Sprint": "Implementar gestión básica de turnos y registro de pacientes/propietarios con interfaz intuitiva.",
+      "Historias de Usuario Seleccionadas": "<ul><li>HU-001: Visualización de agenda</li><li>HU-002: Creación de turno</li><li>HU-003: Registro de pacientes</li><li>HU-004: Cancelación de turno</li></ul>",
+      "Tareas Desglosadas": "<ul><li>HU-001: Diseñar calendario (mockups), implementar vistas diaria/semanal, integrar datos.</li><li>HU-002: Diseñar formulario, lógica de búsqueda/creación paciente, asignación turno.</li><li>HU-003: Esquema BD, CRUD básico (HTML/CSS, SQLite).</li><li>HU-004: Botón cancelación, lógica de estado.</li></ul>",
+      "Sprint Backlog": "Estimaciones con story points, carga realista para 1 semana.",
+      "Definición de Terminado (DoD)": "Código revisado, pruebas unitarias/integración al 100%, desplegado en pre-producción."
+    },
+    "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s1_daily",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Daily Scrum",
+    "date": "19/05/2025",
+    "time": "10:00 - 10:15",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Sincronizar progreso, planificar día, identificar impedimentos.",
+    "summary": "Avances: Eduardo finalizó creación turnos, Leandro completó calendario. Tareas pendientes: cancelación turnos, pruebas integración.",
+    "details": {
+      "Avances": "<ul><li>Eduardo: Finalizó creación turnos, pruebas unitarias; hoy trabaja en cancelación.</li><li>Leandro: Completó calendario, hoy integra flujos; sin impedimentos.</li><li>Marcelo: Aclaró dudas con cliente, hoy monitorea progreso.</li></ul>",
+      "Tareas Pendientes": "<ul><li>T01: Cancelación turnos (Eduardo)</li><li>T02: Pruebas integración (Leandro)</li><li>T03: Entorno demo (Leandro)</li><li>T04: Monitoreo (Marcelo)</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s1_refinement",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Product Backlog Refinement",
+    "date": "20/05/2025",
+    "time": "14:00 - 15:00",
+    "location": "Sala Virtual",
+    "objective": "Refinar backlog, estimar HU, priorizar.",
+    "summary": "HU revisadas: HU-001 (5 SP), HU-002 (8 SP), HU-005 (8 SP). Prioridades definidas, DoD alineado.",
+    "details": {
+      "HU Revisadas": "<ul><li>HU-001: Visualización de agenda (5 SP)</li><li>HU-002: Creación de turno (8 SP)</li><li>HU-005: Recordatorios vía WhatsApp/SMS (8 SP)</li></ul>",
+      "Prioridades": "Gestión turnos y registro (Sprint 1), recordatorios (futuro).",
+      "Tareas Pendientes": "<ul><li>T01: Detallar HU turnos (Eduardo, 21/05/2025)</li><li>T02: HU-004 (Leandro, 21/05/2025)</li><li>T03: Investigar APIs WhatsApp (Eduardo, 22/05/2025)</li><li>T04: Actualizar backlog (Marcelo, 21/05/2025)</li></ul>",
+      "Definición de Terminado (DoD)": "Revisado y alineado con equipo/cliente."
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s1_review",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Sprint Review",
+    "date": "21/05/2025",
+    "time": "15:00 - 16:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Demostrar incremento, recopilar feedback.",
+    "summary": "HU-001 a HU-004 completadas. Demostración exitosa, feedback solicita recordatorios y mejoras.",
+    "details": {
+      "Estado": "HU-001 a HU-004 completadas, DoD cumplido.",
+      "Demostración": "Calendarización, creación/cancelación turnos, registro pacientes.",
+      "Feedback": "Cliente satisfecho; pide búsqueda rápida, recordatorios (HU-005), motivo consulta.",
+      "Tareas Pendientes": "<ul><li>T01: Refinar HU-005 (Dra. Olave/Eduardo, 22/05/2025)</li><li>T02: Mejorar búsqueda (Leandro, 22/05/2025)</li><li>T03: Analizar motivo consulta (Eduardo, 22/05/2025)</li><li>T04: Actualizar backlog (Marcelo, 22/05/2025)</li></ul>"
+    },
+    "attendees": ["Dr. Lautaro Colella", "Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s1_retrospective",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Sprint Retrospective",
+    "date": "21/05/2025",
+    "time": "16:30 - 18:00",
+    "location": "Sala Virtual",
+    "objective": "Revisar Sprint 1, planificar mejoras.",
+    "summary": "Keep: comunicación y colaboración. Stop: retrasos. Start: automatización y canales consulta.",
+    "details": {
+      "Temas y Acuerdos": "<ul><li>Keep: Comunicación diaria, colaboración, disponibilidad cliente, DoD claro.</li><li>Stop: Retraso en entorno, documentación dispersa, interrupciones.</li><li>Start: Automatizar entornos, definir canales consulta cliente.</li></ul>",
+      "Tareas Pendientes": "<ul><li>T01: Investigar automatización (Eduardo, 22/05/2025)</li><li>T02: Wiki documentación (Leandro, 22/05/2025)</li><li>T03: Canales consulta (Marcelo, 22/05/2025)</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dra. Pamela Olave"]
+  },
+  {
+    "id": "s1_followup",
+    "sprint": "Sprint 1 - Gestión Básica de Turnos",
+    "type": "Follow-up with Client",
+    "date": "22/05/2025",
+    "time": "10:00 - 11:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Resumir Sprint 1, recopilar feedback, confirmar prioridades.",
+    "summary": "Sprint 1 exitoso, cliente satisfecho. Prioridad: HU-005 (recordatorios).",
+    "details": {
+      "Resumen": "Sprint 1 exitoso, cliente satisfecho con gestión turnos.",
+      "Feedback": "Priorizar HU-005 (recordatorios), mejorar búsqueda, considerar motivo consulta.",
+      "Próximos Pasos": "Sprint 2 enfocado en recordatorios, ajustes usabilidad.",
+      "Tareas Pendientes": "<ul><li>T01: Actualizar backlog (Marcelo/Dra. Olave, 22/05/2025)</li><li>T02: Detallar HU-005 (Eduardo, 23/05/2025)</li><li>T03: Analizar motivo consulta (Leandro, 23/05/2025)</li><li>T04: Canales comunicación (Marcelo, 22/05/2025)</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Dr. Lautaro Colella", "Marcelo Moreno"]
+  },
+  {
+    "id": "s2_planning",
+    "sprint": "Sprint 2 - Recordatorios Básicos",
+    "type": "Sprint Planning",
+    "date": "22/05/2025",
+    "time": "13:00 - 14:30",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Planificar Sprint 2.",
+    "summary": "Objetivo: implementar recordatorios básicos. HU-005 seleccionada.",
+    "details": {
+      "Objetivo del Sprint": "Implementar recordatorios básicos.",
+      "Historias de Usuario Seleccionadas": "<ul><li>HU-005: Recordatorios vía WhatsApp/SMS (8 SP)</li></ul>",
+      "Tareas Desglosadas": "<ul><li>Desarrollar notificaciones.</li></ul>"
+    },
+    "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s2_daily",
+    "sprint": "Sprint 2 - Recordatorios Básicos",
+    "type": "Daily Scrum",
+    "date": "26/05/2025",
+    "time": "10:00 - 10:15",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Sincronización.",
+    "summary": "Avances en notificaciones, tareas pendientes finalización HU-005.",
+    "details": {
+      "Avances": "<ul><li>Eduardo: Trabaja en notificaciones.</li><li>Leandro: Pruebas.</li><li>Marcelo: Coordinación.</li></ul>",
+      "Tareas Pendientes": "<ul><li>Finalizar HU-005.</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s2_review",
+    "sprint": "Sprint 2 - Recordatorios Básicos",
+    "type": "Sprint Review",
+    "date": "28/05/2025",
+    "time": "15:00 - 16:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Revisión.",
+    "summary": "Demostración de recordatorios, feedback sugiere optimización.",
+    "details": {
+      "Demostración": "Recordatorios vía WhatsApp/SMS.",
+      "Feedback": "Optimización solicitada.",
+      "Tareas Pendientes": "<ul><li>Ajustar HU-005.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s2_retrospective",
+    "sprint": "Sprint 2 - Recordatorios Básicos",
+    "type": "Sprint Retrospective",
+    "date": "28/05/2025",
+    "time": "16:30 - 17:30",
+    "location": "Sala Virtual",
+    "objective": "Reflexión.",
+    "summary": "Keep: progreso. Stop: interrupciones. Tarea: documentación.",
+    "details": {
+      "Temas y Acuerdos": "<ul><li>Keep: Progreso.</li><li>Stop: Interrupciones.</li></ul>",
+      "Tareas Pendientes": "<ul><li>Documentación (Leandro).</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dr. Lautaro Colella"]
+  },
+  {
+    "id": "s2_followup",
+    "sprint": "Sprint 2 - Recordatorios Básicos",
+    "type": "Follow-up with Client",
+    "date": "29/05/2025",
+    "time": "10:00 - 11:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Feedback.",
+    "summary": "Progreso en recordatorios, prioridad en reportes.",
+    "details": {
+      "Temas": "Progreso recordatorios, priorizar reportes.",
+      "Tareas Pendientes": "<ul><li>Planificar Sprint 3.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno"]
+  },
+  {
+    "id": "s3_planning",
+    "sprint": "Sprint 3 - Reportes Básicos",
+    "type": "Sprint Planning",
+    "date": "29/05/2025",
+    "time": "13:00 - 14:30",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Planificar Sprint 3.",
+    "summary": "Objetivo: reportes básicos. HU reportes seleccionada.",
+    "details": {
+      "Objetivo del Sprint": "Implementar reportes básicos.",
+      "Historias de Usuario Seleccionadas": "<ul><li>HU reportes: Reportes básicos (5 SP)</li></ul>",
+      "Tareas Desglosadas": "<ul><li>Desarrollar reportes.</li></ul>"
+    },
+    "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s3_review",
+    "sprint": "Sprint 3 - Reportes Básicos",
+    "type": "Sprint Review",
+    "date": "04/06/2025",
+    "time": "15:00 - 16:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Revisión.",
+    "summary": "Demostración de reportes, feedback sugiere historial.",
+    "details": {
+      "Demostración": "Reportes básicos.",
+      "Feedback": "Solicitud de historial clínico.",
+      "Tareas Pendientes": "<ul><li>Planificar HU historial.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s3_retrospective",
+    "sprint": "Sprint 3 - Reportes Básicos",
+    "type": "Sprint Retrospective",
+    "date": "04/06/2025",
+    "time": "16:30 - 17:30",
+    "location": "Sala Virtual",
+    "objective": "Reflexión.",
+    "summary": "Keep: feedback. Stop: retrasos. Tarea: automatización.",
+    "details": {
+      "Temas y Acuerdos": "<ul><li>Keep: Feedback.</li><li>Stop: Retrasos.</li></ul>",
+      "Tareas Pendientes": "<ul><li>Automatización (Eduardo).</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dr. Lautaro Colella"]
+  },
+  {
+    "id": "s3_followup",
+    "sprint": "Sprint 3 - Reportes Básicos",
+    "type": "Follow-up with Client",
+    "date": "05/06/2025",
+    "time": "10:00 - 11:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Feedback.",
+    "summary": "Reportes aceptados, prioridad en historial.",
+    "details": {
+      "Temas": "Reportes aceptados, priorizar historial clínico.",
+      "Tareas Pendientes": "<ul><li>Planificar Sprint 4.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno"]
+  },
+  {
+    "id": "s4_planning",
+    "sprint": "Sprint 4 - Historial Clínico",
+    "type": "Sprint Planning",
+    "date": "05/06/2025",
+    "time": "13:00 - 14:30",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Planificar Sprint 4.",
+    "summary": "Objetivo: historial clínico. HU historial seleccionada.",
+    "details": {
+      "Objetivo del Sprint": "Implementar historial clínico.",
+      "Historias de Usuario Seleccionadas": "<ul><li>HU historial: Historial clínico (5 SP)</li></ul>",
+      "Tareas Desglosadas": "<ul><li>Desarrollar historial.</li></ul>"
+    },
+    "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s4_daily",
+    "sprint": "Sprint 4 - Historial Clínico",
+    "type": "Daily Scrum",
+    "date": "09/06/2025",
+    "time": "10:00 - 10:15",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Sincronización.",
+    "summary": "Avances en historial, tareas pendientes finalización.",
+    "details": {
+      "Avances": "<ul><li>Eduardo: Trabaja en historial.</li><li>Leandro: Pruebas.</li><li>Marcelo: Coordinación.</li></ul>",
+      "Tareas Pendientes": "<ul><li>Finalizar HU.</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s4_review",
+    "sprint": "Sprint 4 - Historial Clínico",
+    "type": "Sprint Review",
+    "date": "11/06/2025",
+    "time": "15:00 - 16:00",
+    "location": "Clínica 'Amigos Fieles'",
+    "objective": "Revisión.",
+    "summary": "Demostración de historial, feedback sugiere optimización.",
+    "details": {
+      "Demostración": "Historial clínico.",
+      "Feedback": "Optimización final solicitada.",
+      "Tareas Pendientes": "<ul><li>Planificar Sprint 5.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  },
+  {
+    "id": "s4_retrospective",
+    "sprint": "Sprint 4 - Historial Clínico",
+    "type": "Sprint Retrospective",
+    "date": "11/06/2025",
+    "time": "16:30 - 17:30",
+    "location": "Sala Virtual",
+    "objective": "Reflexión.",
+    "summary": "Keep: entrega. Stop: documentación. Tarea: wiki.",
+    "details": {
+      "Temas y Acuerdos": "<ul><li>Keep: Entrega.</li><li>Stop: Documentación.</li></ul>",
+      "Tareas Pendientes": "<ul><li>Wiki (Leandro).</li></ul>"
+    },
+    "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dr. Lautaro Colella"]
+  },
+  {
+    "id": "s5_planning",
+    "sprint": "Sprint 5 - Optimización Final",
+    "type": "Sprint Planning",
+    "date": "13/06/2025",
+    "time": "09:00 - 10:30",
+    "location": "Oficina Equipo Alpha Futuro",
+    "objective": "Planificar Sprint 5.",
+    "summary": "Objetivo: optimización final. HU restantes seleccionada.",
+    "details": {
+      "Objetivo del Sprint": "Implementar optimización final y reportes avanzados.",
+      "Historias de Usuario Seleccionadas": "<ul><li>HU restantes: Optimización y reportes (5 SP)</li></ul>",
+      "Tareas Desglosadas": "<ul><li>Refinamiento, pruebas.</li></ul>"
+    },
+    "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
+  }
+]
+

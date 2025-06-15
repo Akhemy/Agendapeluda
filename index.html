@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendapeluda </title>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS para responsividad -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐾 Agendapeluda</h1>
+            <p>Sistema de Gestión de Turnos - Minutas de Desarrollo</p>
+        </div>
+
+        <div class="timeline" id="timeline-container">
+            <!-- El contenido de la línea de tiempo se cargará aquí con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal para detalles (se puede duplicar para cada modal necesario) -->
+    <div id="modal-details" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-date"></p>
+            <p id="modal-location"></p>
+            <h3>Objetivo del Sprint</h3>
+            <p id="modal-objective"></p>
+            <div id="modal-details-content"></div>
+            <h3>Asistentes</h3>
+            <div id="modal-attendees" class="attendees"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript principal -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
