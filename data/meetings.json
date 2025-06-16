@@ -44,7 +44,7 @@
     "details": {
       "HU Revisadas": "<ul><li>HU-001: Visualización de agenda (5 SP)</li><li>HU-002: Creación de turno (8 SP)</li><li>HU-005: Recordatorios vía WhatsApp/SMS (8 SP)</li></ul>",
       "Prioridades": "Gestión turnos y registro (Sprint 1), recordatorios (futuro).",
-      "Tareas Pendientes": "<ul><li>T01: Detallar HU turnos (Eduardo, 21/05/2025)</li><li>T02: HU-004 (Leandro, 21/05/2025)</li><li>T03: Investigar APIs WhatsApp (Eduardo, 22/05/2025)</li><li>T04: Actualizar backlog (Marcelo, 21/05/2025)</li></ul>",
+      "Tareas Pendientes": "<ul><li>T01: Detallar HU turnos (Eduardo)</li><li>T02: HU-004 (Leandro)</li><li>T03: Investigar APIs WhatsApp (Eduardo)</li><li>T04: Actualizar backlog (Marcelo)</li></ul>",
       "Definición de Terminado (DoD)": "Revisado y alineado con equipo/cliente."
     },
     "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
@@ -62,7 +62,7 @@
       "Estado": "HU-001 a HU-004 completadas, DoD cumplido.",
       "Demostración": "Calendarización, creación/cancelación turnos, registro pacientes.",
       "Feedback": "Cliente satisfecho; pide búsqueda rápida, recordatorios (HU-005), motivo consulta.",
-      "Tareas Pendientes": "<ul><li>T01: Refinar HU-005 (Dra. Olave/Eduardo, 22/05/2025)</li><li>T02: Mejorar búsqueda (Leandro, 22/05/2025)</li><li>T03: Analizar motivo consulta (Eduardo, 22/05/2025)</li><li>T04: Actualizar backlog (Marcelo, 22/05/2025)</li></ul>"
+      "Tareas Pendientes": "<ul><li>T01: Refinar HU-005 (Dra. Olave/Eduardo)</li><li>T02: Mejorar búsqueda (Leandro)</li><li>T03: Analizar motivo consulta (Eduardo)</li><li>T04: Actualizar backlog (Marcelo)</li></ul>"
     },
     "attendees": ["Dr. Lautaro Colella", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
   },
@@ -79,7 +79,7 @@
       "Keep": "<ul><li>Comunicación diaria, colaboración, disponibilidad cliente, DoD claro.</li></ul>",
       "Stop": "<ul><li>Retraso en entorno, documentación dispersa, interrupciones.</li></ul>",
       "Start": "<ul><li>Automatizar entornos, definir canales consulta cliente.</li></ul>",
-      "Tareas Pendientes": "<ul><li>T01: Investigar automatización (Eduardo, 22/05/2025)</li><li>T02: Wiki documentación (Leandro, 22/05/2025)</li><li>T03: Canales consulta (Marcelo, 22/05/2025)</li></ul>"
+      "Tareas Pendientes": "<ul><li>T01: Investigar automatización (Eduardo)</li><li>T02: Wiki documentación (Leandro)</li><li>T03: Canales consulta (Marcelo)</li></ul>"
     },
     "attendees": ["Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski", "Dra. Pamela Olave"]
   },
@@ -96,7 +96,7 @@
       "Resumen": "Sprint 1 exitoso, cliente satisfecho con gestión turnos.",
       "Feedback": "Priorizar HU-005 (recordatorios), mejorar búsqueda, considerar motivo consulta.",
       "Próximos Pasos": "Sprint 2 enfocado en recordatorios, ajustes usabilidad.",
-      "Tareas Pendientes": "<ul><li>T01: Actualizar backlog (Marcelo/Dra. Olave, 22/05/2025)</li><li>T02: Detallar HU-005 (Eduardo, 23/05/2025)</li><li>T03: Analizar motivo consulta (Leandro, 23/05/2025)</li><li>T04: Canales comunicación (Marcelo, 22/05/2025)</li></ul>"
+      "Tareas Pendientes": "<ul><li>T01: Actualizar backlog (Marcelo/Dra. Olave)</li><li>T02: Detallar HU-005 (Eduardo)</li><li>T03: Analizar motivo consulta (Leandro)</li><li>T04: Canales comunicación (Marcelo)</li></ul>"
     },
     "attendees": ["Dra. Pamela Olave", "Dr. Lautaro Colella", "Marcelo Moreno"]
   },
