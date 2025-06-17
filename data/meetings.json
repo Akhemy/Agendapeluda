@@ -1,5 +1,21 @@
 [
   {
+   "id": "initial_req_gathering",
+   "sprint": "Pre-Sprint 1",
+   "type": "Reunión Inicial - Recolección de Requerimientos",
+   "date": "08/05/2025",
+   "time": "10:00 - 11:00",
+   "location": "Clínica Veterinaria “Amigos Fieles”",
+   "objective": "Presentación del equipo de desarrollo, Presentación del objetivo general del sistema, Relevamiento de la situación actual, Identificación de los principales problemas con la gestión de turnos, Interés en un sistema digital accesible y fácil de usar.",
+   "summary": "Presentación del equipo y objetivos del sistema. Relevamiento de problemas en gestión de turnos. Se realizará entrevista estructurada y se pacta próxima reunión para prototipo funcional.",
+   "details": {
+     "Temas tratados": "<ul><li>Presentación del equipo de desarrollo.</li><li>Presentación del objetivo general del sistema.</li><li>Relevamiento de la situación actual.</li><li>Identificación de los principales problemas con la gestión de turnos.</li><li>Interés en un sistema digital accesible y fácil de usar.</li></ul>",
+     "Decisiones": "<ul><li>Se realizará una entrevista estructurada a la Dra. Olave Troncoso como principal fuente de información.</li><li>Se pacta una próxima reunión para presentar un prototipo funcional.</li></ul>",
+     "Observaciones": "La propietaria mostró entusiasmo y expresó que actualmente manejan los turnos con un cuaderno y llamadas telefónicas."
+   },
+   "attendees": ["Dra. Pamela Olave", "Marcelo Moreno"]
+ },
+  {
     "id": "s1_planning",
     "sprint": "Sprint 1 - Gestión Básica de Turnos",
     "type": "Sprint Planning",
