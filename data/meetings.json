@@ -332,5 +332,29 @@
       "Tareas Desglosadas": "<ul><li>Refinamiento, pruebas.</li></ul>"
     },
     "attendees": ["Dra. Pamela Olave", "Marcelo Moreno", "Eduardo Moreno", "Leandro Paryszewski"]
-  }
+  },
+ {
+   "id": "glossary_scrum",
+   "type": "Glosario",
+   "title": "Glosario Metodología Scrum",
+   "summary": "Conceptos clave de la metodología Scrum utilizados en el proyecto AgendaPeluda.",
+   "definitions": {
+     "Daily Scrum (Scrum Diario)": "Una breve reunión diaria (generalmente de 15 minutos) para que el Equipo de Desarrollo sincronice sus actividades, revise el progreso hacia el Objetivo del Sprint y adapte el plan para las próximas 24 horas.",
+     "Definición de Terminado (DoD - Definition of Done)": "Un conjunto claro de criterios que un elemento del Product Backlog debe cumplir para ser considerado 'completado' y de alta calidad. Asegura una comprensión común de lo que significa 'hecho'.",
+     "Equipo de Desarrollo (Development Team)": "Un grupo de profesionales multifuncionales y autoorganizados que son responsables de entregar un Incremento de producto 'Terminado' y utilizable al final de cada Sprint.",
+     "Historia de Usuario (HU)": "Una descripción concisa de una funcionalidad desde la perspectiva del usuario, enfocándose en el valor que aporta. Se utilizan para representar elementos del Product Backlog.",
+     "Impedimentos": "Cualquier obstáculo o problema que el Equipo de Desarrollo enfrenta y que le impide progresar en el Sprint. El Scrum Master es el principal responsable de ayudar a removerlos.",
+     "Incremento (Incremento de Producto)": "La suma de todos los elementos del Product Backlog completados durante un Sprint, más los de todos los Sprints anteriores. Debe ser utilizable y potencialmente liberable en cada Sprint.",
+     "Product Backlog": "Una lista priorizada y dinámica de todo lo que se necesita hacer en el producto. Contiene elementos como las Historias de Usuario, características, requisitos y correcciones de errores.",
+     "Product Backlog Refinement (Refinamiento del Product Backlog)": "Una actividad continua (no un evento formal) en la que el Product Owner y el Equipo de Desarrollo colaboran para agregar detalles, estimaciones y ordenar los elementos del Product Backlog, preparándolos para futuros Sprints.",
+     "Product Owner (PO)": "La persona responsable de maximizar el valor del producto que el equipo desarrolla. Es el encargado de gestionar el Product Backlog y asegurar que refleje las prioridades del negocio y los requisitos del cliente.",
+     "Scrum Master (SM)": "El facilitador que asegura que el equipo siga los principios y prácticas de Scrum. Ayuda a remover impedimentos y a fomentar la autoorganización y la mejora continua dentro del equipo y la organización.",
+     "Sprint": "Un periodo de tiempo fijo y corto (generalmente de una a cuatro semanas) durante el cual se desarrolla un Incremento de producto utilizable. Es el corazón de Scrum, un 'contenedor' para todos los demás eventos.",
+     "Sprint Backlog": "El subconjunto de elementos del Product Backlog seleccionados por el Equipo de Desarrollo para un Sprint específico, junto con el plan para convertir esos elementos en un Incremento de producto.",
+     "Sprint Planning (Planificación del Sprint)": "Una reunión al inicio de cada Sprint donde el Equipo Scrum colabora para definir el Objetivo del Sprint, seleccionar las Historias de Usuario del Product Backlog que se trabajarán y planificar cómo se logrará ese objetivo.",
+     "Sprint Retrospective (Retrospectiva del Sprint)": "Una reunión al final de cada Sprint donde el Equipo Scrum inspecciona cómo fue el Sprint en términos de personas, relaciones, procesos y herramientas. El objetivo es identificar qué se hizo bien (Keep), qué se debería dejar de hacer (Stop) y qué se podría empezar a hacer (Start) para mejorar.",
+     "Sprint Review (Revisión del Sprint)": "Una reunión al final del Sprint donde el Equipo Scrum y los interesados inspeccionan el Incremento de producto que se ha 'Terminado' y colaboran sobre lo que se debe hacer a continuación. Se demuestra el trabajo realizado y se recopila feedback.",
+     "Story Points (SP)": "Una unidad de medida relativa utilizada por los equipos Scrum para estimar la complejidad, el esfuerzo y la incertidumbre de una Historia de Usuario."
+   }
+ }
 ]
