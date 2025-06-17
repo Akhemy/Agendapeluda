@@ -15,25 +15,46 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.openModal = (meetingId) => {
         const meeting = meetingsData.find(m => m.id === meetingId);
         if (meeting) {
-            modalTitle.textContent = meeting.type;
-            modalDate.textContent = `Fecha: ${meeting.date} | Duración: ${meeting.duration}`;
-            modalLocation.textContent = `Lugar: ${meeting.location}`;
-            modalObjective.textContent = meeting.objective;
+            // Lógica para el glosario en el modal
+            if (meeting.type === "Glosario") {
+                modalTitle.textContent = meeting.title;
+                modalDate.textContent = ''; // El glosario no tiene fecha/duración
+                modalLocation.textContent = ''; // El glosario no tiene ubicación
+                modalObjective.textContent = meeting.summary; // Usar summary como objetivo principal
 
-            modalDetailsContent.innerHTML = '';
-            for (const key in meeting.details) {
-                const p = document.createElement('p');
-                p.innerHTML = `<strong>${key}:</strong> ${meeting.details[key]}`;
-                modalDetailsContent.appendChild(p);
+                modalDetailsContent.innerHTML = '<h3>Definiciones:</h3>';
+                const definitionsList = document.createElement('ul');
+                definitionsList.classList.add('glossary-definitions'); // Clase para estilos específicos si quieres
+                for (const term in meeting.definitions) {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${term}:</strong> ${meeting.definitions[term]}`;
+                    definitionsList.appendChild(listItem);
+                }
+                modalDetailsContent.appendChild(definitionsList);
+
+                modalAttendees.innerHTML = ''; // El glosario no tiene asistentes
+
+            } else { // Lógica para las minutas normales
+                modalTitle.textContent = meeting.type;
+                modalDate.textContent = `Fecha: ${meeting.date} | Duración: ${meeting.time}`; // Usar 'time' como 'duración'
+                modalLocation.textContent = `Lugar: ${meeting.location}`;
+                modalObjective.textContent = meeting.objective;
+
+                modalDetailsContent.innerHTML = '';
+                for (const key in meeting.details) {
+                    const p = document.createElement('p');
+                    p.innerHTML = `<strong>${key}:</strong> ${meeting.details[key]}`;
+                    modalDetailsContent.appendChild(p);
+                }
+
+                modalAttendees.innerHTML = '';
+                meeting.attendees.forEach(attendee => {
+                    const span = document.createElement('span');
+                    span.classList.add('attendee');
+                    span.textContent = attendee;
+                    modalAttendees.appendChild(span);
+                });
             }
-
-            modalAttendees.innerHTML = '';
-            meeting.attendees.forEach(attendee => {
-                const span = document.createElement('span');
-                span.classList.add('attendee');
-                span.textContent = attendee;
-                modalAttendees.appendChild(span);
-            });
 
             modal.style.display = 'flex'; // Usar flex para centrar
         }
@@ -67,9 +88,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Función para renderizar la línea de tiempo
     function renderTimeline(data) {
         let currentSprint = '';
-        data.forEach(meeting => {
-            if (meeting.sprint !== currentSprint) {
-                currentSprint = meeting.sprint;
+        data.forEach(item => { // Cambiado 'meeting' a 'item' para ser más genérico
+            if (item.type === "Glosario") {
+                // Renderizar el glosario de forma especial
+                const glossaryItem = document.createElement('div');
+                glossaryItem.classList.add('glossary-item'); // Clase para el glosario
+                glossaryItem.innerHTML = `
+                    <div class="meeting-card" onclick="openModal('${item.id}')">
+                        <div class="meeting-type glossary-type">${item.type}</div>
+                        <div class="meeting-title">${item.title}</div>
+                        <div class="meeting-summary">${item.summary}</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                `;
+                timelineContainer.appendChild(glossaryItem);
+                return; // Salta al siguiente elemento para no procesarlo como una minuta normal
+            }
+
+            // Lógica existente para minutas
+            if (item.sprint !== currentSprint) {
+                currentSprint = item.sprint;
                 const sprintSection = document.createElement('div');
                 sprintSection.classList.add('sprint-section');
                 sprintSection.innerHTML = `
@@ -83,15 +121,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             const meetingItem = document.createElement('div');
             meetingItem.classList.add('meeting-item');
             meetingItem.innerHTML = `
-                <div class="meeting-card" onclick="openModal('${meeting.id}')">
-                    <div class="meeting-type ${meeting.type.toLowerCase().replace(/\s/g, '-')}">${meeting.type}</div>
-                    <div class="meeting-date">${meeting.date}</div>
+                <div class="meeting-card" onclick="openModal('${item.id}')">
+                    <div class="meeting-type ${item.type.toLowerCase().replace(/\s/g, '-')}">${item.type}</div>
+                    <div class="meeting-date">${item.date}</div>
                     <div class="meeting-details">
-                        <strong>Objetivo:</strong> ${meeting.objective}<br>
-                        <strong>Aspectos Clave:</strong> ${meeting.summary}<br>
+                        <strong>Objetivo:</strong> ${item.objective}<br>
+                        <strong>Aspectos Clave:</strong> ${item.summary}<br>
                     </div>
                     <div class="attendees">
-                        ${meeting.attendees.map(a => `<span class="attendee">${a}</span>`).join('')}
+                        ${item.attendees.map(a => `<span class="attendee">${a}</span>`).join('')}
                     </div>
                 </div>
                 <div class="timeline-dot"></div>
